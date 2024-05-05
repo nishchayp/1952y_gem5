@@ -1,0 +1,23 @@
+Loading new script...
+/root
+exit.sh  gem5_init.sh
+benchmarks  FloatMM	    mr_arm64  square
+bfs	    hello64-static  mt_x64    x86-matrix-multiply-omp-20230127
+cd into working dir
+execute mt_x64
+./mt_x64: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by ./mt_x64)
+x86-matrix-multiply-omp-20230127 4 4
+/tmp/runscript: 17: /tmp/runscript: ./x86-matrix-multiply-omp-20230127: Permission denied
+# ls
+benchmarks  FloatMM	    mr_arm64  square
+bfs	    hello64-static  mt_x64    x86-matrix-multiply-omp-20230127
+# ./hel	lo64-static
+/bin/sh: 2: ./hello64-static: Permission denied
+# chmod +x hello64-static
+# . ^[[A^[[A        ./hello64-static
+Hello world!
+# cm hmod +x x86-matrix-multiply-omp-20230127
+# ./x86-matrix-multiply-omp-20230127 4 4
+Using 4 iterations
+Using 4 threads
+# /sbin	/m5 exit
