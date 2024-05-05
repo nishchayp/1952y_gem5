@@ -1,0 +1,291 @@
+SMT on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.050s
+user	0m0.050s
+sys	0m0.000s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.052s
+user	0m0.052s
+sys	0m0.000s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.050s
+user	0m0.050s
+sys	0m0.000s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.050s
+user	0m0.050s
+sys	0m0.000s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.051s
+user	0m0.051s
+sys	0m0.000s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.028s
+user	0m0.047s
+sys	0m0.004s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.028s
+user	0m0.052s
+sys	0m0.000s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.031s
+user	0m0.048s
+sys	0m0.004s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.030s
+user	0m0.052s
+sys	0m0.000s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.028s
+user	0m0.051s
+sys	0m0.000s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.026s
+user	0m0.084s
+sys	0m0.000s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.021s
+user	0m0.070s
+sys	0m0.000s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.021s
+user	0m0.069s
+sys	0m0.000s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.021s
+user	0m0.065s
+sys	0m0.004s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.021s
+user	0m0.069s
+sys	0m0.000s
+
+------
+
+
+SMT off
+command: echo off | sudo tee /sys/devices/system/cpu/smt/control
+off
+command: cat /sys/devices/system/cpu/smt/active
+0
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.078s
+user	0m0.069s
+sys	0m0.009s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.051s
+user	0m0.047s
+sys	0m0.004s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.051s
+user	0m0.047s
+sys	0m0.004s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.051s
+user	0m0.047s
+sys	0m0.004s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.052s
+user	0m0.051s
+sys	0m0.000s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.031s
+user	0m0.047s
+sys	0m0.004s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.033s
+user	0m0.052s
+sys	0m0.000s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.033s
+user	0m0.052s
+sys	0m0.000s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.032s
+user	0m0.048s
+sys	0m0.004s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.033s
+user	0m0.049s
+sys	0m0.004s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/x86-matrix-multiply-omp-20230127 4 4
+Run 1
+Using 4 iterations
+Using 4 threads
+
+real	0m0.032s
+user	0m0.047s
+sys	0m0.005s
+
+Run 2
+Using 4 iterations
+Using 4 threads
+
+real	0m0.035s
+user	0m0.048s
+sys	0m0.004s
+
+Run 3
+Using 4 iterations
+Using 4 threads
+
+real	0m0.032s
+user	0m0.048s
+sys	0m0.004s
+
+Run 4
+Using 4 iterations
+Using 4 threads
+
+real	0m0.032s
+user	0m0.048s
+sys	0m0.004s
+
+Run 5
+Using 4 iterations
+Using 4 threads
+
+real	0m0.032s
+user	0m0.048s
+sys	0m0.004s
+
+------
+
+
+Set smt back to on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1

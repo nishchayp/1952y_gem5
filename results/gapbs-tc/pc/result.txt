@@ -1,0 +1,501 @@
+SMT on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.03044
+Build Time:          0.00733
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00030
+Trial Time:          0.00028
+Trial Time:          0.00030
+Trial Time:          0.00025
+Trial Time:          0.00023
+Average Time:        0.00027
+
+real	0m0.055s
+user	0m0.050s
+sys	0m0.005s
+
+Run 2
+Generate Time:       0.02560
+Build Time:          0.00719
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00030
+Trial Time:          0.00026
+Trial Time:          0.00030
+Trial Time:          0.00025
+Trial Time:          0.00027
+Average Time:        0.00028
+
+real	0m0.048s
+user	0m0.047s
+sys	0m0.000s
+
+Run 3
+Generate Time:       0.02459
+Build Time:          0.00677
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00034
+Trial Time:          0.00034
+Trial Time:          0.00031
+Trial Time:          0.00030
+Trial Time:          0.00026
+Average Time:        0.00031
+
+real	0m0.047s
+user	0m0.039s
+sys	0m0.008s
+
+Run 4
+Generate Time:       0.02453
+Build Time:          0.00702
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00029
+Trial Time:          0.00028
+Trial Time:          0.00031
+Trial Time:          0.00025
+Trial Time:          0.00023
+Average Time:        0.00027
+
+real	0m0.046s
+user	0m0.035s
+sys	0m0.012s
+
+Run 5
+Generate Time:       0.02428
+Build Time:          0.00695
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00030
+Trial Time:          0.00028
+Trial Time:          0.00031
+Trial Time:          0.00022
+Trial Time:          0.00027
+Average Time:        0.00028
+
+real	0m0.046s
+user	0m0.042s
+sys	0m0.005s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.02500
+Build Time:          0.00832
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00018
+Trial Time:          0.00017
+Trial Time:          0.00021
+Trial Time:          0.00013
+Average Time:        0.00018
+
+real	0m0.042s
+user	0m0.074s
+sys	0m0.000s
+
+Run 2
+Generate Time:       0.02557
+Build Time:          0.00800
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00018
+Trial Time:          0.00017
+Trial Time:          0.00015
+Trial Time:          0.00014
+Average Time:        0.00017
+
+real	0m0.042s
+user	0m0.070s
+sys	0m0.004s
+
+Run 3
+Generate Time:       0.02498
+Build Time:          0.00792
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00018
+Trial Time:          0.00018
+Trial Time:          0.00015
+Trial Time:          0.00014
+Average Time:        0.00017
+
+real	0m0.042s
+user	0m0.062s
+sys	0m0.012s
+
+Run 4
+Generate Time:       0.02518
+Build Time:          0.00791
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00023
+Trial Time:          0.00018
+Trial Time:          0.00014
+Trial Time:          0.00014
+Average Time:        0.00018
+
+real	0m0.042s
+user	0m0.074s
+sys	0m0.000s
+
+Run 5
+Generate Time:       0.02530
+Build Time:          0.00812
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00022
+Trial Time:          0.00018
+Trial Time:          0.00017
+Trial Time:          0.00015
+Trial Time:          0.00013
+Average Time:        0.00017
+
+real	0m0.042s
+user	0m0.070s
+sys	0m0.004s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.02566
+Build Time:          0.00590
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00023
+Trial Time:          0.00016
+Trial Time:          0.00014
+Trial Time:          0.00012
+Trial Time:          0.00013
+Average Time:        0.00016
+
+real	0m0.040s
+user	0m0.117s
+sys	0m0.007s
+
+Run 2
+Generate Time:       0.02632
+Build Time:          0.00599
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00027
+Trial Time:          0.00016
+Trial Time:          0.00014
+Trial Time:          0.00012
+Trial Time:          0.00012
+Average Time:        0.00016
+
+real	0m0.039s
+user	0m0.120s
+sys	0m0.004s
+
+Run 3
+Generate Time:       0.02583
+Build Time:          0.00582
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00022
+Trial Time:          0.00015
+Trial Time:          0.00012
+Trial Time:          0.00011
+Trial Time:          0.00010
+Average Time:        0.00014
+
+real	0m0.039s
+user	0m0.125s
+sys	0m0.000s
+
+Run 4
+Generate Time:       0.02698
+Build Time:          0.00590
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00023
+Trial Time:          0.00016
+Trial Time:          0.00014
+Trial Time:          0.00012
+Trial Time:          0.00011
+Average Time:        0.00015
+
+real	0m0.041s
+user	0m0.126s
+sys	0m0.000s
+
+Run 5
+Generate Time:       0.02801
+Build Time:          0.00586
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00026
+Trial Time:          0.00017
+Trial Time:          0.00015
+Trial Time:          0.00013
+Trial Time:          0.00012
+Average Time:        0.00017
+
+real	0m0.041s
+user	0m0.119s
+sys	0m0.009s
+
+------
+
+
+SMT off
+command: echo off | sudo tee /sys/devices/system/cpu/smt/control
+off
+command: cat /sys/devices/system/cpu/smt/active
+0
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.04829
+Build Time:          0.00739
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00029
+Trial Time:          0.00032
+Trial Time:          0.00031
+Trial Time:          0.00025
+Trial Time:          0.00023
+Average Time:        0.00028
+
+real	0m0.076s
+user	0m0.062s
+sys	0m0.013s
+
+Run 2
+Generate Time:       0.02477
+Build Time:          0.00682
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00027
+Trial Time:          0.00025
+Trial Time:          0.00029
+Trial Time:          0.00023
+Trial Time:          0.00021
+Average Time:        0.00025
+
+real	0m0.048s
+user	0m0.047s
+sys	0m0.000s
+
+Run 3
+Generate Time:       0.02571
+Build Time:          0.00680
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00032
+Trial Time:          0.00029
+Trial Time:          0.00033
+Trial Time:          0.00029
+Trial Time:          0.00030
+Average Time:        0.00030
+
+real	0m0.048s
+user	0m0.048s
+sys	0m0.000s
+
+Run 4
+Generate Time:       0.02510
+Build Time:          0.00705
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00027
+Trial Time:          0.00027
+Trial Time:          0.00032
+Trial Time:          0.00026
+Trial Time:          0.00024
+Average Time:        0.00027
+
+real	0m0.047s
+user	0m0.047s
+sys	0m0.000s
+
+Run 5
+Generate Time:       0.02524
+Build Time:          0.00719
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00030
+Trial Time:          0.00026
+Trial Time:          0.00034
+Trial Time:          0.00023
+Trial Time:          0.00021
+Average Time:        0.00027
+
+real	0m0.047s
+user	0m0.047s
+sys	0m0.000s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.02532
+Build Time:          0.00805
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00020
+Trial Time:          0.00017
+Trial Time:          0.00017
+Trial Time:          0.00014
+Trial Time:          0.00015
+Average Time:        0.00017
+
+real	0m0.043s
+user	0m0.068s
+sys	0m0.004s
+
+Run 2
+Generate Time:       0.02496
+Build Time:          0.00752
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00047
+Trial Time:          0.00017
+Trial Time:          0.00017
+Trial Time:          0.00014
+Trial Time:          0.00014
+Average Time:        0.00022
+
+real	0m0.043s
+user	0m0.069s
+sys	0m0.004s
+
+Run 3
+Generate Time:       0.02532
+Build Time:          0.00784
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00018
+Trial Time:          0.00017
+Trial Time:          0.00014
+Trial Time:          0.00033
+Average Time:        0.00021
+
+real	0m0.065s
+user	0m0.086s
+sys	0m0.000s
+
+Run 4
+Generate Time:       0.02995
+Build Time:          0.00798
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00020
+Trial Time:          0.00018
+Trial Time:          0.00017
+Trial Time:          0.00015
+Trial Time:          0.00014
+Average Time:        0.00017
+
+real	0m0.048s
+user	0m0.066s
+sys	0m0.008s
+
+Run 5
+Generate Time:       0.02477
+Build Time:          0.00799
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00023
+Trial Time:          0.00022
+Trial Time:          0.00018
+Trial Time:          0.00016
+Trial Time:          0.00164
+Average Time:        0.00049
+
+real	0m0.043s
+user	0m0.070s
+sys	0m0.004s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/bfs -g 13 -n 5
+Run 1
+Generate Time:       0.02525
+Build Time:          0.00755
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00017
+Trial Time:          0.00019
+Trial Time:          0.00016
+Trial Time:          0.00014
+Average Time:        0.00017
+
+real	0m0.044s
+user	0m0.070s
+sys	0m0.004s
+
+Run 2
+Generate Time:       0.02493
+Build Time:          0.00944
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00028
+Trial Time:          0.00053
+Trial Time:          0.00017
+Trial Time:          0.00014
+Trial Time:          0.00017
+Average Time:        0.00026
+
+real	0m0.044s
+user	0m0.075s
+sys	0m0.000s
+
+Run 3
+Generate Time:       0.02866
+Build Time:          0.00872
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00021
+Trial Time:          0.00020
+Trial Time:          0.00017
+Trial Time:          0.00028
+Trial Time:          0.00014
+Average Time:        0.00020
+
+real	0m0.048s
+user	0m0.075s
+sys	0m0.000s
+
+Run 4
+Generate Time:       0.02533
+Build Time:          0.00766
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00020
+Trial Time:          0.00017
+Trial Time:          0.00018
+Trial Time:          0.00014
+Trial Time:          0.00014
+Average Time:        0.00016
+
+real	0m0.044s
+user	0m0.070s
+sys	0m0.004s
+
+Run 5
+Generate Time:       0.02540
+Build Time:          0.00835
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00037
+Trial Time:          0.00017
+Trial Time:          0.00017
+Trial Time:          0.00014
+Trial Time:          0.00014
+Average Time:        0.00020
+
+real	0m0.043s
+user	0m0.066s
+sys	0m0.007s
+
+------
+
+
+Set smt back to on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1

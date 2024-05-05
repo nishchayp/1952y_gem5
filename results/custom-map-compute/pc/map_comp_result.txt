@@ -1,0 +1,699 @@
+SMT on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+After Thread
+
+real	0m0.012s
+user	0m0.004s
+sys	0m0.008s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+After Thread
+
+real	0m0.005s
+user	0m0.004s
+sys	0m0.004s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+After Thread
+
+real	0m0.005s
+user	0m0.008s
+sys	0m0.000s
+
+------
+
+
+SMT off
+command: echo off | sudo tee /sys/devices/system/cpu/smt/control
+off
+command: cat /sys/devices/system/cpu/smt/active
+0
+------
+
+
+Core 0
+command: time taskset --cpu-list 0 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+After Thread
+
+real	0m0.013s
+user	0m0.004s
+sys	0m0.008s
+
+------
+
+
+Core 0-1
+command: time taskset --cpu-list 0-1 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+After Thread
+
+real	0m0.008s
+user	0m0.005s
+sys	0m0.003s
+
+------
+
+
+Core 0-3
+command: time taskset --cpu-list 0-3 ./benchmarks/map_compute_x64_static
+Run 1
+Before Thread
+Printing from Thread 2: 2 ^ 10 mod 100000 = 1024
+Printing from Thread 3: 3 ^ 10 mod 100000 = 59049
+Printing from Thread 4: 4 ^ 10 mod 100000 = 48576
+Printing from Thread 5: 5 ^ 10 mod 100000 = 65625
+Printing from Thread 6: 6 ^ 10 mod 100000 = 66176
+Printing from Thread 23: 23 ^ 10 mod 100000 = 13649
+Printing from Thread 25: 25 ^ 10 mod 100000 = 40625
+Printing from Thread 21: 21 ^ 10 mod 100000 = 78201
+Printing from Thread 20: 20 ^ 10 mod 100000 = 0
+Printing from Thread 29: 29 ^ 10 mod 100000 = 201
+Printing from Thread 99: 99 ^ 10 mod 100000 = 49001
+Printing from Thread 26: 26 ^ 10 mod 100000 = 53376
+Printing from Thread 27: 27 ^ 10 mod 100000 = 94649
+Printing from Thread 10: 10 ^ 10 mod 100000 = 0
+Printing from Thread 12: 12 ^ 10 mod 100000 = 64224
+Printing from Thread 13: 13 ^ 10 mod 100000 = 91849
+Printing from Thread 28: 28 ^ 10 mod 100000 = 95424
+Printing from Thread 30: 30 ^ 10 mod 100000 = 0
+Printing from Thread 32: 32 ^ 10 mod 100000 = 42624
+Printing from Thread 33: 33 ^ 10 mod 100000 = 64449
+Printing from Thread 8: 8 ^ 10 mod 100000 = 41824
+Printing from Thread 7: 7 ^ 10 mod 100000 = 75249
+Printing from Thread 14: 14 ^ 10 mod 100000 = 54976
+Printing from Thread 15: 15 ^ 10 mod 100000 = 90625
+Printing from Thread 11: 11 ^ 10 mod 100000 = 24601
+Printing from Thread 16: 16 ^ 10 mod 100000 = 27776
+Printing from Thread 17: 17 ^ 10 mod 100000 = 449
+Printing from Thread 31: 31 ^ 10 mod 100000 = 80801
+Printing from Thread 34: 34 ^ 10 mod 100000 = 59776
+Printing from Thread 39: 39 ^ 10 mod 100000 = 91601
+Printing from Thread 40: 40 ^ 10 mod 100000 = 0
+Printing from Thread 41: 41 ^ 10 mod 100000 = 52401
+Printing from Thread 42: 42 ^ 10 mod 100000 = 77824
+Printing from Thread 43: 43 ^ 10 mod 100000 = 84249
+Printing from Thread 44: 44 ^ 10 mod 100000 = 18176
+Printing from Thread 46: 46 ^ 10 mod 100000 = 76576
+Printing from Thread 45: 45 ^ 10 mod 100000 = 15625
+Printing from Thread 47: 47 ^ 10 mod 100000 = 30049
+Printing from Thread 49: 49 ^ 10 mod 100000 = 12001
+Printing from Thread 48: 48 ^ 10 mod 100000 = 45024
+Printing from Thread 50: 50 ^ 10 mod 100000 = 0
+Printing from Thread 51: 51 ^ 10 mod 100000 = 13001
+Printing from Thread 52: 52 ^ 10 mod 100000 = 57024
+Printing from Thread 53: 53 ^ 10 mod 100000 = 13049
+Printing from Thread 54: 54 ^ 10 mod 100000 = 20576
+Printing from Thread 55: 55 ^ 10 mod 100000 = 40625
+Printing from Thread 56: 56 ^ 10 mod 100000 = 14176
+Printing from Thread 57: 57 ^ 10 mod 100000 = 91249
+Printing from Thread 58: 58 ^ 10 mod 100000 = 5824
+Printing from Thread 59: 59 ^ 10 mod 100000 = 41401
+Printing from Thread 60: 60 ^ 10 mod 100000 = 0
+Printing from Thread 61: 61 ^ 10 mod 100000 = 82601
+Printing from Thread 62: 62 ^ 10 mod 100000 = 40224
+Printing from Thread 63: 63 ^ 10 mod 100000 = 90849
+Printing from Thread 64: 64 ^ 10 mod 100000 = 46976
+Printing from Thread 65: 65 ^ 10 mod 100000 = 90625
+Printing from Thread 66: 66 ^ 10 mod 100000 = 95776
+Printing from Thread 67: 67 ^ 10 mod 100000 = 61449
+Printing from Thread 68: 68 ^ 10 mod 100000 = 10624
+Printing from Thread 69: 69 ^ 10 mod 100000 = 59801
+Printing from Thread 70: 70 ^ 10 mod 100000 = 0
+Printing from Thread 71: 71 ^ 10 mod 100000 = 81201
+Printing from Thread 72: 72 ^ 10 mod 100000 = 87424
+Printing from Thread 73: 73 ^ 10 mod 100000 = 57649
+Printing from Thread 74: 74 ^ 10 mod 100000 = 77376
+Printing from Thread 75: 75 ^ 10 mod 100000 = 65625
+Printing from Thread 76: 76 ^ 10 mod 100000 = 41376
+Printing from Thread 36: 36 ^ 10 mod 100000 = 62976
+Printing from Thread 78: 78 ^ 10 mod 100000 = 99424
+Printing from Thread 38: 38 ^ 10 mod 100000 = 88224
+Printing from Thread 80: 80 ^ 10 mod 100000 = 0
+Printing from Thread 22: 22 ^ 10 mod 100000 = 91424
+Printing from Thread 82: 82 ^ 10 mod 100000 = 58624
+Printing from Thread 19: 19 ^ 10 mod 100000 = 57801
+Printing from Thread 90: 90 ^ 10 mod 100000 = 0
+Printing from Thread 18: 18 ^ 10 mod 100000 = 26624
+Printing from Thread 91: 91 ^ 10 mod 100000 = 45401
+Printing from Thread 84: 84 ^ 10 mod 100000 = 91776
+Printing from Thread 94: 94 ^ 10 mod 100000 = 70176
+Printing from Thread 1: 1 ^ 10 mod 100000 = 1
+Printing from Thread 95: 95 ^ 10 mod 100000 = 90625
+Printing from Thread 0: 0 ^ 10 mod 100000 = 0
+Printing from Thread 97: 97 ^ 10 mod 100000 = 26049
+Printing from Thread 98: 98 ^ 10 mod 100000 = 89024
+Printing from Thread 24: 24 ^ 10 mod 100000 = 65376
+Printing from Thread 9: 9 ^ 10 mod 100000 = 84401
+Printing from Thread 35: 35 ^ 10 mod 100000 = 15625
+Printing from Thread 37: 37 ^ 10 mod 100000 = 17849
+Printing from Thread 77: 77 ^ 10 mod 100000 = 649
+Printing from Thread 79: 79 ^ 10 mod 100000 = 47201
+Printing from Thread 81: 81 ^ 10 mod 100000 = 28801
+Printing from Thread 89: 89 ^ 10 mod 100000 = 83601
+Printing from Thread 92: 92 ^ 10 mod 100000 = 13824
+Printing from Thread 93: 93 ^ 10 mod 100000 = 18249
+Printing from Thread 85: 85 ^ 10 mod 100000 = 65625
+Printing from Thread 86: 86 ^ 10 mod 100000 = 70976
+Printing from Thread 87: 87 ^ 10 mod 100000 = 68849
+Printing from Thread 88: 88 ^ 10 mod 100000 = 12224
+Printing from Thread 83: 83 ^ 10 mod 100000 = 53449
+Printing from Thread 96: 96 ^ 10 mod 100000 = 4576
+After Thread
+
+real	0m0.010s
+user	0m0.005s
+sys	0m0.003s
+
+------
+
+
+Set smt back to on
+command: echo on | sudo tee /sys/devices/system/cpu/smt/control
+on
+command: cat /sys/devices/system/cpu/smt/active
+1
