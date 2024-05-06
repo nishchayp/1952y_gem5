@@ -1,0 +1,15 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1918916
+##  Job Name : mm_4_core.sh
+##  Nodelist : node2420
+##      CPUs : 4
+##  Mem/Node : 65536 MB
+## Directory : /oscar/home/hli129/cs1952y/1952y_gem5
+##   Job Started : Sun May  5 10:33:12 PM EDT 2024
+###############################################################################
+Using 4 iterations
+Using 4 threads
+
+real	0m0.020s
+user	0m0.037s
+sys	0m0.000s
