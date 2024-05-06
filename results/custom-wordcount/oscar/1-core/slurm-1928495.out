@@ -1,0 +1,14 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1928495
+##  Job Name : wordcount.sh
+##  Nodelist : node2417
+##      CPUs : 1
+##  Mem/Node : 65536 MB
+## Directory : /oscar/home/hli129/cs1952y/1952y_gem5
+##   Job Started : Mon May  6 03:51:32 PM EDT 2024
+###############################################################################
+1000
+
+real	0m2.285s
+user	0m2.148s
+sys	0m0.066s
