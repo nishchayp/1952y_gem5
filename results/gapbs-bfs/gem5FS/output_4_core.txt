@@ -1,0 +1,13 @@
+cs1952y-user@156c63f7706b:~/gem5/util/term$ ./m5term localhost 3456
+==== m5 terminal: Terminal 0 ====
+Loading new script...
+Generate Time:       0.04299
+Build Time:          0.01200
+Graph has 8191 nodes and 102124 undirected edges for degree: 12
+Trial Time:          0.00000
+Trial Time:          0.00100
+Trial Time:          0.00000
+Trial Time:          0.00000
+Trial Time:          0.00100
+Average Time:        0.00040
+Done running script, exiting.
