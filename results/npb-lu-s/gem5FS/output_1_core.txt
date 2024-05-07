@@ -1,0 +1,9 @@
+ Class           =                        S
+ Size            =             12x  12x  12
+ Iterations      =                       50
+ Time in seconds =                     0.13
+ Mop/s total     =                   779.36
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+ Compile date    =              13 Feb 2024
